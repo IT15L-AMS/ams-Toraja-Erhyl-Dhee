@@ -7,7 +7,7 @@ import { authenticateToken } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-// Helper function to generate JWT
+// helper pa generate token
 const generateToken = (id, email, role) => {
     return jwt.sign(
         { id, email, role },
@@ -55,7 +55,7 @@ router.post('/register', [
             [full_name, email, password_hash, role_id]
         );
 
-        // 5. Generate JWT using helper
+        // 5. helper 1
         const token = generateToken(result.insertId, email, role_name);
 
         res.status(201).json({
@@ -102,7 +102,7 @@ router.post('/login', [
             return res.status(401).json({ success: false, message: 'Invalid email or password' });
         }
 
-        // 3. Generate JWT using helper
+        // 3. helper 2 
         const token = generateToken(user.id, user.email, user.role_name);
 
         res.json({

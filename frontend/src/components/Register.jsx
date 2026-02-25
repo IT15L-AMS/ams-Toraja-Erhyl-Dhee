@@ -36,7 +36,7 @@ const Register = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-[#0f172a] px-4 py-12">
-            <div className="max-w-md w-full space-y-8 p-10 bg-[#1e293b] rounded-2xl shadow-2xl border border-gray-700/50 backdrop-blur-xl">
+            <div className="max-w-md w-full space-y-8 p-10 bg-[#1e293b] shadow-2xl border border-gray-700/50 backdrop-blur-xl">
                 <div>
                     <div className="flex justify-center">
                         <div className="p-3 bg-purple-500/10 rounded-xl">
@@ -68,7 +68,7 @@ const Register = () => {
                                 name="full_name"
                                 type="text"
                                 required
-                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 rounded-xl bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm"
+                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm"
                                 placeholder="Full Name"
                                 value={formData.full_name}
                                 onChange={handleChange}
@@ -83,7 +83,7 @@ const Register = () => {
                                 name="email"
                                 type="email"
                                 required
-                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 rounded-xl bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm"
+                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm"
                                 placeholder="Email address"
                                 value={formData.email}
                                 onChange={handleChange}
@@ -98,7 +98,7 @@ const Register = () => {
                                 name="password"
                                 type="password"
                                 required
-                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 rounded-xl bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm"
+                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm"
                                 placeholder="Password (min. 6 characters)"
                                 value={formData.password}
                                 onChange={handleChange}
@@ -111,7 +111,7 @@ const Register = () => {
                             </div>
                             <select
                                 name="role_name"
-                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 rounded-xl bg-[#0f172a] text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm appearance-none"
+                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 bg-[#0f172a] text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all sm:text-sm appearance-none"
                                 value={formData.role_name}
                                 onChange={handleChange}
                             >
@@ -126,7 +126,7 @@ const Register = () => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold rounded-xl text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-purple-500/20"
+                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-purple-500/20"
                     >
                         {loading ? 'Creating Account...' : 'Get Started'}
                     </button>

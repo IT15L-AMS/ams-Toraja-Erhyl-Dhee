@@ -32,7 +32,7 @@ const Login = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-[#0f172a] px-4">
-            <div className="max-w-md w-full space-y-8 p-10 bg-[#1e293b] rounded-2xl shadow-2xl border border-gray-700/50 backdrop-blur-xl">
+            <div className="max-w-md w-full space-y-8 p-10 bg-[#1e293b] shadow-2xl border border-gray-700/50 backdrop-blur-xl">
                 <div>
                     <div className="flex justify-center">
                         <div className="p-3 bg-blue-500/10 rounded-xl">
@@ -40,7 +40,7 @@ const Login = () => {
                         </div>
                     </div>
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-white tracking-tight">
-                        Welcome Back
+                        Welcome
                     </h2>
                     <p className="mt-2 text-center text-sm text-gray-400">
                         Please enter your details to sign in
@@ -64,7 +64,7 @@ const Login = () => {
                                 name="email"
                                 type="email"
                                 required
-                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 rounded-xl leading-5 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all sm:text-sm"
+                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 leading-5 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all sm:text-sm"
                                 placeholder="Email address"
                                 value={formData.email}
                                 onChange={handleChange}
@@ -79,7 +79,7 @@ const Login = () => {
                                 name="password"
                                 type="password"
                                 required
-                                className="block w-full pl-10 pr-3 py-3 border border-gray-700 rounded-xl leading-5 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all sm:text-sm"
+                                className="block w-full pl-10 pr-3 py-3 border border-gray-700  leading-5 bg-[#0f172a] text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all sm:text-sm"
                                 placeholder="Password"
                                 value={formData.password}
                                 onChange={handleChange}
@@ -90,7 +90,7 @@ const Login = () => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {loading ? 'Signing in...' : 'Sign in'}
                     </button>

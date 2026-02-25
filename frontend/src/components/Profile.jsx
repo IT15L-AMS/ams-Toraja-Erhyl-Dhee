@@ -47,7 +47,7 @@ const Profile = () => {
                     <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
                     <button
                         onClick={handleLogout}
-                        className="flex items-center gap-2 px-4 py-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 rounded-xl border border-red-500/20 transition-all font-medium"
+                        className="flex items-center gap-2 px-4 py-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20 transition-all font-medium"
                     >
                         <LogOut className="w-4 h-4" />
                         Logout
@@ -57,7 +57,7 @@ const Profile = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* User Info Card */}
                     <div className="md:col-span-1 space-y-6">
-                        <div className="p-8 bg-[#1e293b] rounded-2xl border border-gray-700/50 shadow-xl">
+                        <div className="p-8 bg-[#1e293b] border border-gray-700/50 shadow-xl">
                             <div className="flex flex-col items-center">
                                 <div className="w-24 h-24 bg-blue-500/10 rounded-full flex items-center justify-center mb-6">
                                     <User className="w-12 h-12 text-blue-400" />
@@ -81,22 +81,22 @@ const Profile = () => {
 
                     {/* Welcome Card */}
                     <div className="md:col-span-2">
-                        <div className="p-8 bg-[#1e293b] rounded-2xl border border-gray-700/50 shadow-xl h-full">
-                            <h3 className="text-2xl font-bold mb-4">Welcome back, {user?.full_name.split(' ')[0]}!</h3>
+                        <div className="p-8 bg-[#1e293b] border border-gray-700/50 shadow-xl h-full">
+                            <h3 className="text-2xl font-bold mb-4">Welcome, {user?.full_name.split(' ')[0]}!</h3>
                             <p className="text-gray-400 leading-relaxed mb-8">
                                 You are currently logged in as a <span className="text-white font-medium">{user?.role_name}</span>.
                                 Your access to the Academic Management System is restricted based on this role.
                             </p>
 
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="p-4 bg-[#0f172a] rounded-xl border border-gray-700/50">
+                                <div className="p-4 bg-[#0f172a] border-gray-700/50">
                                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Status</p>
                                     <p className="text-green-400 font-medium flex items-center gap-2">
                                         <span className="w-2 h-2 bg-green-400 rounded-full"></span>
                                         Active
                                     </p>
                                 </div>
-                                <div className="p-4 bg-[#0f172a] rounded-xl border border-gray-700/50">
+                                <div className="p-4 bg-[#0f172a] border border-gray-700/50">
                                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">System Version</p>
                                     <p className="font-medium text-gray-300">v1.0.0 Alpha</p>
                                 </div>
